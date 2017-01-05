@@ -1,0 +1,129 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+  "homepage": "https://roots.io/bedrock/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "bedrock",
+    "roots",
+    "wordpress",
+    "stack",
+    "composer",
+    "vagrant",
+    "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "koodimonni-plugin-language/woocommerce-pdf-invoices-packing-slips-sv_SE",
+        "type": "wordpress-language",
+        "version": "1.5.38",
+        "dist": {
+          "type": "zip",
+          "url": "https://downloads.wordpress.org/translation/plugin/woocommerce-pdf-invoices-packing-slips/1.5.38/sv_SE.zip",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "koodimonni-theme-language/storefront-sv_SE",
+        "type": "wordpress-language",
+        "version": "2.1.6",
+        "dist": {
+          "type": "zip",
+          "url": "https://downloads.wordpress.org/translation/theme/storefront/2.1.6/sv_SE.zip",
+          "reference": "master"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.7",
+    "oscarotero/env": "^1.0",
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/bugsnag": "1.3.*",
+    "wpackagist-theme/storefront": "2.1.6",
+    "wpackagist-plugin/woocommerce": "2.6.*",
+    "wpackagist-plugin/autodescription": "2.7.*",
+    "wpackagist-plugin/woocommerce-pdf-invoices-packing-slips": "1.5.38",
+    "wpackagist-plugin/wp-force-ssl": "1.2.*",
+    "koodimonni-language/sv_se": "*",
+    "wpackagist-plugin/google-sitemap-generator": "4.0.*",
+    "koodimonni-plugin-language/woocommerce-pdf-invoices-packing-slips-sv_SE": "1.5.38",
+    "koodimonni-theme-language/storefront-sv_SE": "2.1.6",
+    "wpackagist-plugin/tiny-compress-images": "2.1.*",
+    "wpackagist-plugin/woosidebars": "1.4.*",
+    "wpackagist-plugin/wp-maintenance-mode": "2.0.9",
+    "wpackagist-plugin/siteorigin-panels": "2.4.*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1",
+    "wpackagist-plugin/mailtrap-for-wp": "0.2.*",
+    "wpackagist-plugin/query-monitor": "2.13.*",
+    "wpackagist-plugin/wp-maintenance-mode": "2.0.9"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "web/wp",
+    "dropin-paths": {
+      "web/app/languages/": [
+        "vendor:koodimonni-language"
+      ],
+      "web/app/languages/plugins/": [
+        "vendor:koodimonni-plugin-language"
+      ],
+      "web/app/languages/themes/": [
+        "vendor:koodimonni-theme-language"
+      ]
+    }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ]
+  }
+}
