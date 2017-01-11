@@ -66,35 +66,80 @@
           "reference": "master"
         }
       }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "koodimonni-plugin-language/siteorigin-panels-sv_SE",
+        "type": "wordpress-language",
+        "version": "2.4.21",
+        "dist": {
+          "type": "zip",
+          "url": "https://downloads.wordpress.org/translation/plugin/siteorigin-panels/2.4.21/sv_SE.zip",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "koodimonni-plugin-language/akismet-sv_SE",
+        "type": "wordpress-language",
+        "version": "3.2",
+        "dist": {
+          "type": "zip",
+          "url": "https://downloads.wordpress.org/translation/plugin/akismet/3.2/sv_SE.zip",
+          "reference": "master"
+        }
+      }
+    },
+    {
+      "type":"package",
+      "package": {
+        "name": "explodybits/hookr-plugin",
+        "version":"master",
+        "source": {
+          "url": "https://github.com/explodybits/hookr-plugin.git",
+          "type": "git",
+          "reference":"master"
+        }
+      }
     }
   ],
   "require": {
     "php": ">=5.6",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.7",
+    "johnpbloch/wordpress": "4.7.*",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/bugsnag": "1.3.*",
     "wpackagist-theme/storefront": "2.1.6",
+    "koodimonni-theme-language/storefront-sv_SE": "2.1.6",
     "wpackagist-plugin/woocommerce": "2.6.*",
     "wpackagist-plugin/autodescription": "2.7.*",
     "wpackagist-plugin/woocommerce-pdf-invoices-packing-slips": "1.5.38",
+    "koodimonni-plugin-language/woocommerce-pdf-invoices-packing-slips-sv_SE": "1.5.38",
     "wpackagist-plugin/wp-force-ssl": "1.2.*",
     "koodimonni-language/sv_se": "*",
     "wpackagist-plugin/google-sitemap-generator": "4.0.*",
-    "koodimonni-plugin-language/woocommerce-pdf-invoices-packing-slips-sv_SE": "1.5.38",
-    "koodimonni-theme-language/storefront-sv_SE": "2.1.6",
     "wpackagist-plugin/tiny-compress-images": "2.1.*",
     "wpackagist-plugin/woosidebars": "1.4.*",
     "wpackagist-plugin/wp-maintenance-mode": "2.0.9",
-    "wpackagist-plugin/siteorigin-panels": "2.4.*"
+    "wpackagist-plugin/siteorigin-panels": "2.4.21",
+    "koodimonni-plugin-language/siteorigin-panels-sv_SE": "2.4.21",
+    "wpackagist-plugin/ninja-forms": "3.0.*",
+    "wpackagist-plugin/akismet": "3.2",
+    "koodimonni-plugin-language/akismet-sv_SE": "3.2",
+    "wpackagist-plugin/fma-dynamic-pricing-rules": "1.0.1",
+    "wpackagist-plugin/woocommerce-advanced-free-shipping": "1.0.11"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
     "wpackagist-plugin/mailtrap-for-wp": "0.2.*",
     "wpackagist-plugin/query-monitor": "2.13.*",
-    "wpackagist-plugin/wp-maintenance-mode": "2.0.9"
+    "wpackagist-plugin/wp-maintenance-mode": "2.0.9",
+    "explodybits/hookr-plugin": "dev-master"
   },
   "extra": {
     "installer-paths": {
