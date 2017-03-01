@@ -72,7 +72,7 @@
       "package": {
         "name": "koodimonni-plugin-language/siteorigin-panels-sv_SE",
         "type": "wordpress-language",
-        "version": "2.4.21",
+        "version": "2.4.24",
         "dist": {
           "type": "zip",
           "url": "https://downloads.wordpress.org/translation/plugin/siteorigin-panels/2.4.21/sv_SE.zip",
@@ -94,14 +94,14 @@
       }
     },
     {
-      "type":"package",
+      "type": "package",
       "package": {
         "name": "explodybits/hookr-plugin",
-        "version":"master",
+        "version": "master",
         "source": {
           "url": "https://github.com/explodybits/hookr-plugin.git",
           "type": "git",
-          "reference":"master"
+          "reference": "master"
         }
       }
     }
@@ -114,32 +114,39 @@
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/bugsnag": "1.3.*",
-    "wpackagist-theme/storefront": "2.1.6",
-    "koodimonni-theme-language/storefront-sv_SE": "2.1.6",
+    "wpackagist-theme/storefront": "2.1.*",
+    "koodimonni-theme-language/storefront-sv_SE": "2.1.*",
     "wpackagist-plugin/woocommerce": "2.6.*",
-    "wpackagist-plugin/autodescription": "2.7.*",
+    "koodimonni-plugin-language/woocommerce-sv_se": "2.6.*",
+    "wpackagist-plugin/autodescription": "2.8.*",
     "wpackagist-plugin/woocommerce-pdf-invoices-packing-slips": "1.5.38",
     "koodimonni-plugin-language/woocommerce-pdf-invoices-packing-slips-sv_SE": "1.5.38",
     "wpackagist-plugin/wp-force-ssl": "1.2.*",
     "koodimonni-language/sv_se": "*",
     "wpackagist-plugin/google-sitemap-generator": "4.0.*",
-    "wpackagist-plugin/tiny-compress-images": "2.1.*",
+    "wpackagist-plugin/tiny-compress-images": "2.2.*",
     "wpackagist-plugin/woosidebars": "1.4.*",
     "wpackagist-plugin/wp-maintenance-mode": "2.0.9",
-    "wpackagist-plugin/siteorigin-panels": "2.4.21",
-    "koodimonni-plugin-language/siteorigin-panels-sv_SE": "2.4.21",
+    "wpackagist-plugin/siteorigin-panels": "2.4.24",
+    "koodimonni-plugin-language/siteorigin-panels-sv_SE": "2.4.23",
+    "wpackagist-plugin/so-widgets-bundle": "1.8.*",
+    "wpackagist-plugin/addon-so-widgets-bundle": "2.4.1",
     "wpackagist-plugin/ninja-forms": "3.0.*",
     "wpackagist-plugin/akismet": "3.2",
     "koodimonni-plugin-language/akismet-sv_SE": "3.2",
-    "wpackagist-plugin/fma-dynamic-pricing-rules": "1.0.1",
-    "wpackagist-plugin/woocommerce-advanced-free-shipping": "1.0.11"
+    "wpackagist-plugin/woocommerce-advanced-free-shipping": "1.0.11",
+    "wpackagist-plugin/yith-woocommerce-custom-order-status": "1.0.9",
+    "wpackagist-plugin/woo-discount-rules": "1.4.4",
+    "wpackagist-plugin/woocommerce-google-analytics-integration": "1.4.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
-    "wpackagist-plugin/mailtrap-for-wp": "0.2.*",
     "wpackagist-plugin/query-monitor": "2.13.*",
     "wpackagist-plugin/wp-maintenance-mode": "2.0.9",
-    "explodybits/hookr-plugin": "dev-master"
+    "explodybits/hookr-plugin": "dev-master",
+    "wpackagist-plugin/debug-bar": "dev-trunk",
+    "wpackagist-plugin/developer": "dev-trunk",
+    "wpackagist-plugin/mailtrap-for-wp": "0.2.*"
   },
   "extra": {
     "installer-paths": {
